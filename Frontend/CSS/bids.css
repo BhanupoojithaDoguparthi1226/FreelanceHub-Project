@@ -1,0 +1,133 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#4F46E5,#7C3AED);
+    min-height:100vh;
+}
+
+/* Navbar */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    color:white;
+}
+
+.back-btn{
+    text-decoration:none;
+    color:white;
+    background:rgba(255,255,255,.2);
+    padding:10px 20px;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:white;
+    color:#4F46E5;
+}
+
+/* Container */
+
+.container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* Bid Card */
+
+.bid-card{
+    width:700px;
+    background:rgba(255,255,255,.15);
+    backdrop-filter:blur(15px);
+    border-radius:20px;
+    padding:40px;
+    color:white;
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+.bid-card h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.bid-card p{
+    text-align:center;
+    margin-bottom:30px;
+    color:#f0f0f0;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+label{
+    margin-bottom:8px;
+    margin-top:15px;
+    font-weight:600;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:14px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    font-size:15px;
+    margin-bottom:10px;
+}
+
+textarea{
+    resize:none;
+}
+
+input[type="file"]{
+    background:white;
+    cursor:pointer;
+}
+
+button{
+    margin-top:25px;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#FFD700;
+    color:#333;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+button:hover{
+    background:white;
+    transform:scale(1.03);
+    box-shadow:0 10px 25px rgba(255,255,255,.3);
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.bid-card{
+    width:100%;
+    padding:25px;
+}
+
+.navbar{
+    flex-direction:column;
+    gap:15px;
+}
+
+}

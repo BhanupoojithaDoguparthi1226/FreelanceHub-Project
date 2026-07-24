@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admin Dashboard | FreelanceHub</title>
+
+<link rel="stylesheet" href="css/admin.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="sidebar">
+
+<h2>Admin Panel</h2>
+
+<ul>
+
+<li class="active">
+<i class="fa-solid fa-chart-line"></i>
+Dashboard
+</li>
+
+<li>
+<i class="fa-solid fa-users"></i>
+Users
+</li>
+
+<li>
+<i class="fa-solid fa-folder-open"></i>
+Projects
+</li>
+
+<li>
+<i class="fa-solid fa-money-bill-wave"></i>
+Payments
+</li>
+
+<li>
+<i class="fa-solid fa-star"></i>
+Reviews
+</li>
+
+<li id="logout">
+<i class="fa-solid fa-right-from-bracket"></i>
+Logout
+</li>
+
+</ul>
+
+</div>
+
+<div class="main">
+
+<header>
+
+<h1>Admin Dashboard</h1>
+
+</header>
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-users"></i>
+
+<h2>1,250</h2>
+
+<p>Total Users</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-folder-open"></i>
+
+<h2>320</h2>
+
+<p>Projects</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<h2>₹8.5L</h2>
+
+<p>Total Revenue</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-user-check"></i>
+
+<h2>890</h2>
+
+<p>Active Freelancers</p>
+
+</div>
+
+</div>
+
+<section class="table-section">
+
+<h2>Recent Users</h2>
+
+<table>
+
+<tr>
+
+<th>Name</th>
+
+<th>Role</th>
+
+<th>Status</th>
+
+</tr>
+
+<tr>
+
+<td>Bhanu Poojitha</td>
+
+<td>Freelancer</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>Rahul Kumar</td>
+
+<td>Client</td>
+
+<td>Active</td>
+
+</tr>
+
+<tr>
+
+<td>Priya Sharma</td>
+
+<td>Freelancer</td>
+
+<td>Pending</td>
+
+</tr>
+
+<tr>
+
+<td>ABC Technologies</td>
+
+<td>Client</td>
+
+<td>Verified</td>
+
+</tr>
+
+</table>
+
+</section>
+
+</div>
+
+<script>
+const user = JSON.parse(localStorage.getItem("user"));
+
+if (!user || user.role !== "admin") {
+    alert("Access Denied!");
+    window.location.href = "dashboard.html";
+}
+</script>
+
+<script src="js/admin.js"></script>
+
+</body>
+
+</html>

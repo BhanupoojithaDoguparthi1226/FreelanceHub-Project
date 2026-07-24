@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Place Bid | FreelanceHub</title>
+
+<link rel="stylesheet" href="css/bids.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<nav class="navbar">
+
+<h2>FreelanceHub</h2>
+
+<a href="project-details.html" class="back-btn">
+<i class="fa-solid fa-arrow-left"></i> Back
+</a>
+
+</nav>
+<div class = "container">
+    <h1>My Bids</h1>
+    <div id="bidsContainer"></div>
+</div>
+
+<div class="container">
+
+<div class="bid-card">
+
+<h1>Submit Your Proposal</h1>
+
+<p>
+Write a strong proposal to increase your chances of getting hired.
+</p>
+
+<form id="bidForm">
+
+<label>Bid Amount (₹)</label>
+
+<input
+type="number"
+placeholder="Enter your bid amount"
+required>
+
+<label>Estimated Delivery Time</label>
+
+<input
+type="number"
+placeholder="Number of Days"
+required>
+
+<label>Your Proposal</label>
+
+<textarea
+rows="8"
+placeholder="Describe why you are the best fit for this project..."
+required>
+</textarea>
+
+<label>Upload Resume / Portfolio</label>
+
+<input type="file">
+
+<button type="submit">
+
+Submit Bid
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+<script src="js/bids.js"></script>
+
+</body>
+
+</html>

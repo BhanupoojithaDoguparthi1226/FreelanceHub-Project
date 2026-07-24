@@ -1,0 +1,66 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#4F46E5,#7C3AED);
+color:white;
+
+}
+
+
+.loader-container{
+
+text-align:center;
+
+}
+
+
+.loader{
+
+width:80px;
+height:80px;
+border:8px solid rgba(255,255,255,.3);
+border-top:8px solid white;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin:auto;
+
+}
+
+
+.loader-container h2{
+
+margin-top:25px;
+font-size:32px;
+
+}
+
+
+.loader-container p{
+
+margin-top:10px;
+color:#eee;
+
+}
+
+
+@keyframes spin{
+
+from{
+transform:rotate(0deg);
+}
+
+to{
+transform:rotate(360deg);
+}
+
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Project | FreelanceHub</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+
+    body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    background:#eef2ff;
+    overflow:hidden;
+}
+
+.background{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+.shape{
+    position:absolute;
+    border-radius:50%;
+    animation:float 8s ease-in-out infinite;
+}
+
+.s1{
+    width:250px;
+    height:250px;
+    background:#6c63ff;
+    top:-70px;
+    left:-70px;
+    opacity:.25;
+}
+
+.s2{
+    width:180px;
+    height:180px;
+    background:#8b5cf6;
+    bottom:-60px;
+    right:-60px;
+    opacity:.25;
+}
+
+.s3{
+    width:140px;
+    height:140px;
+    background:#4f46e5;
+    top:45%;
+    left:60%;
+    opacity:.2;
+}
+
+.icon{
+    position:absolute;
+    color:#4f46e5;
+    opacity:.2;
+    animation:float 6s infinite ease-in-out;
+}
+
+.i1{top:12%;left:15%;font-size:50px;}
+.i2{top:25%;right:18%;font-size:45px;}
+.i3{bottom:20%;left:12%;font-size:45px;}
+.i4{bottom:15%;right:15%;font-size:50px;}
+.i5{top:60%;left:50%;font-size:45px;}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-20px);
+    }
+}
+
+.container{
+    width:500px;
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+body{
+font-family:Arial,sans-serif;
+background:#f4f6fc;
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.container{
+width:500px;
+background:#fff;
+padding:30px;
+border-radius:12px;
+box-shadow:0 5px 15px rgba(0,0,0,.2);
+}
+
+h2{
+text-align:center;
+color:#4f46e5;
+margin-bottom:20px;
+}
+
+input,textarea,select{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:1px solid #ccc;
+border-radius:8px;
+font-size:16px;
+}
+
+button{
+width:100%;
+padding:12px;
+background:#4f46e5;
+color:#fff;
+border:none;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+button:hover{
+background:#4338ca;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="background">
+
+<div class="shape s1"></div>
+<div class="shape s2"></div>
+<div class="shape s3"></div>
+
+<i class="fa-solid fa-laptop-code icon i1"></i>
+<i class="fa-solid fa-code icon i2"></i>
+<i class="fa-solid fa-briefcase icon i3"></i>
+<i class="fa-solid fa-diagram-project icon i4"></i>
+<i class="fa-solid fa-lightbulb icon i5"></i>
+
+</div>
+
+<div class="container">
+
+<h2>Create Project</h2>
+
+<form id="projectForm">
+
+<input
+type="text"
+id="title"
+placeholder="Project Title"
+required>
+
+<textarea
+id="description"
+placeholder="Project Description"
+required></textarea>
+
+<input
+type="number"
+id="budget"
+placeholder="Budget"
+required>
+
+<select id="category">
+
+<option>Web Development</option>
+<option>App Development</option>
+<option>UI/UX</option>
+<option>AI/ML</option>
+
+</select>
+
+<button type="submit">
+
+Create Project
+
+</button>
+
+</form>
+
+</div>
+
+<script src="js/create_project.js"></script>
+
+</body>
+</html>
